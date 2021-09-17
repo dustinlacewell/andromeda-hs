@@ -1,7 +1,7 @@
 let
   pkgs = import <nixpkgs> { };
 in
-  (pkgs.haskell.packages.ghc8107.callCabal2nix "andromeda" ./. {}).env.overrideAttrs (old: {
+  (pkgs.haskell.packages.ghc8107.callCabal2nix "androcells" ./. {}).env.overrideAttrs (old: {
     buildInputs = old.buildInputs ++ [
       pkgs.ghostscript
       pkgs.entr
